@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>메인작업</title>
+		<script src="js/vendor/modernizr.custom.min.js"></script>
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div class="notice">
+					<p>여기는 공지 칸 입니다.</p>
+					<img src="img/kr.png" class="notice__kr" />
+					<!-- select tag에 이벤트 넣고, option의 value에 링크 걸면됨 -->
+					<!-- 네비 태그로 바꾸는게 좋은건가 -->
+					<select onchange="location = this.value">
+						<option value="./index.html"> KR </option>
+						<option value="./us.html"> US </option>
+						<option value="./jp.html"> JP </option>
+					</select>
+					<p class="notice__sign">로그인 / 회원가입</p>
+				</div>
+
+				<div class="logo">
+					<img src="img/logo.png" />
+				</div>
+
+				<div class="navi">
+					<nav>
+						<ul class="navi__item">
+							<li><a href="#">HOME</a></li>
+							<li>
+								<a href="#" class="ex">ABOUT</a>
+								<ul class="navi__item__down">
+									<li><a href="#">Fitness</a></li>
+									<li><a href="#">Game</a></li>
+									<li><a href="#">Character</a></li>
+									<li><a href="#">Connection</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHOP</a></li>
+							<li><a href="#">COMPANY</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="movie box">
+				<video id="player" width="100%" height="25%" autoplay loop muted>
+					<source src="video/main.mov" />
+				</video>
+			</div>
+
+			<div class="slide box">
+				<div class="slide__area">
+					<img src="img/slide1.jpg" class="slide__img1" alt="" /><img
+						src="img/slide2.jpg"
+						class="slide__img2"
+						alt=""
+					/><img src="img/slide3.jpg" class="slide__img3" alt="" /><img
+						src="img/slide4.jpg"
+						class="slide__img4"
+						alt=""
+					/>
+				</div>
+			</div>
+
+			<footer class="box">
+				<div class="line"></div>
+				<div class="bottom">
+					<span>주소</span><br />
+					<p>부산광역시 해운대구 센텀동로 45 CENTAP</p>
+					<br /><br />
+					<span>메일</span><br />
+					<p>fave188170@gmail.com</p>
+					<br /><br />
+					<span>전화</span><br />
+					<p>+82-51-746-9888</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<p>
+						사업자등록번호 203-88-00742<br />
+						통신판매업신고 제2018-부산해운대-0857호
+					</p>
+					<br /><br /><br />
+					<address>
+						<p>© 2019 (주)건강한친구 All rights Reserved.</p>
+					</address>
+
+					<div class="bottom__in">
+						<p>
+							<a href="#">개인정보처리방침&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;</a>
+						</p>
+						<p><a href="#">이용약관</a></p>
+					</div>
+
+					<img src="img/logo2.png" class="bottom__logo" />
+
+					<div class="bottom__sns">
+						<img src="img/sns_1.png" />
+						<img src="img/sns_2.png" />
+						<img src="img/sns_3.png" />
+					</div>
+
+					<div class="bottom__nav">
+						<ul class="bottom__nav__bold">
+							<li><a href="#">HOME</a></li>
+							<li>
+								<a href="#">ABOUT</a>
+								<ul>
+									<li><a href="#">Fitness</a></li>
+									<li><a href="#">Game</a></li>
+									<li><a href="#">Character</a></li>
+									<li><a href="#">Connection</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHOP</a></li>
+							<li><a href="#">COMPANY</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

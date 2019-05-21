@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	background: #eee;
+	color: black;
+}
+
+footer {
+	width: 100%;
+	height: 600px;
+	background-color: #1d2228;
+	border-top: 10px solid #ff6600;
+	margin-top: -5px;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	margin-top: 190px;
+	background-color: #ff6600;
+	opacity: 0.7;
+}
+
+.bottom {
+	width: 95%;
+	height: 330px;
+	margin-left: 35px;
+	margin-top: 50px;
+	opacity: 0.8;
+	font-size: 0.9rem;
+	position: relative;
+}
+
+.bottom span {
+	color: #ff6600;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.bottom p {
+	color: white;
+	display: inline-block;
+}
+
+.bottom__in {
+	margin-top: -16px;
+	margin-left: 400px;
+}
+.bottom__in p {
+	display: inline-block;
+}
+
+.bottom__in p a {
+	color: white;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+.bottom__logo {
+	width: 180px;
+	height: auto;
+	position: absolute;
+	right: 8px;
+	top: 220px;
+	opacity: 0.5;
+}
+
+.bottom__sns {
+	position: absolute;
+	top: 140px;
+	right: 0px;
+	opacity: 0.8;
+}
+
+.bottom__sns img {
+	margin-right: 7px;
+	width: 50px;
+	height: 50px;
+}
+
+.bottom__sns img:nth-child(1) {
+	border-radius: 20%;
+}
+
+/* 푸터__네비 */
+
+.bottom__nav {
+	position: absolute;
+	top: -75px;
+	right: 100px;
+	height: 60px;
+	width: 40%;
+	z-index: 77;
+}
+
+.bottom__nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.bottom__nav__bold {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottom__nav__bold li {
+	/* display: inline-block;
+	text-align: left;
+	width: 25%;
+	height: 30px;
+	line-height: 30px; */
+}
+
+.bottom__nav__bold li a {
+	color: #ff6600;
+	font-weight: 700;
+}
+
+.bottom__nav__bold ul li {
+	display: block;
+	width: 100%;
+}
+
+.bottom__nav__bold ul li a {
+	color: white;
+	margin: 0 auto;
+	font-weight: bold;
+}
