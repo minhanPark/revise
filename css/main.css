@@ -289,10 +289,6 @@ footer {
 	z-index: 77;
 }
 
-.bottom__nav__bold {
-	display: flex;
-}
-
 .bottom__nav a {
 	color: white;
 }
