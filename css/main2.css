@@ -202,7 +202,9 @@ a {
 
 .top-wrapper__nav__down li.click {
 	display: block;
-	height: 0px;
+}
+.hi {
+	cursor: pointer;
 }
 
 .top-wrapper__nav__down li a:hover {
@@ -314,31 +316,50 @@ video #player {
 .slide {
 	width: 100%;
 	height: 100%;
-	z-index: 77;
+	position: relative;
 	/* overflow: hidden; */
 }
 
 .slide__area {
-	width: 400%;
+	width: 100%;
 	height: 100%;
 	/* animation: slide 20s infinite; */
 	position: relative;
 	left: 0%;
 }
+.slide-items {
+	width: 100%;
+	height: 100%;
+}
 
 .slide__area img {
-	display: inline-block;
-	width: 25%;
+	width: 100%;
 }
+.other-image {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.showing {
+	z-index: 1;
+}
+/* .slide__img2,
+.slide__img3,
+.slide__img4 {
+	width: 100%;
+	position: absolute;
+	top: 0;
+} */
 
 .left {
 	width: 80px;
 	height: 80px;
 	position: absolute;
 	z-index: 88;
-	top: 150%;
 	left: 2%;
+	top: 50%;
 	opacity: 0.7;
+	transform: translateY(-50%);
 }
 
 .right {
@@ -346,9 +367,10 @@ video #player {
 	height: 80px;
 	position: absolute;
 	z-index: 88;
-	top: 150%;
 	right: 2%;
+	top: 50%;
 	opacity: 0.7;
+	transform: translateY(-50%);
 }
 
 /*

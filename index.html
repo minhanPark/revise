@@ -22,7 +22,7 @@
 						<nav class="top-wrapper__nav">
 							<ul>
 								<li>
-									<a href="#" class="hi">
+									<a class="hi">
 										<img src="img/kr.png" class="top-wrapper__nav__img" />
 										<span>KR&nbsp;&#9660;</span>
 									</a>
@@ -88,24 +88,25 @@
 					<source src="video/main.mp4" />
 				</video>
 			</div>
-
+			<!-- 슬라이드 캐러셀 만들기 -->
 			<div class="slide box">
-				<a href="#">
-					<img src="img/left.png" class="left" />
-				</a>
-				<a href="#">
-					<img src="img/right.png" class="right" />
-				</a>
+				<img src="img/left.png" class="left" id="left" />
+
+				<img src="img/right.png" class="right" id="right" />
+
 				<div class="slide__area">
-					<img src="img/slide1.jpg" class="slide__img1" alt="" /><img
-						src="img/slide2.jpg"
-						class="slide__img2"
-						alt=""
-					/><img src="img/slide3.jpg" class="slide__img3" alt="" /><img
-						src="img/slide4.jpg"
-						class="slide__img4"
-						alt=""
-					/>
+					<div class="slide-items">
+						<img src="img/slide1.jpg" class="slide__img1" alt="" />
+					</div>
+					<div class="slide-items other-image">
+						<img src="img/slide2.jpg" class="slide__img2" alt="" />
+					</div>
+					<div class="slide-items other-image">
+						<img src="img/slide3.jpg" class="slide__img3" alt="" />
+					</div>
+					<div class="slide-items other-image" id="lastSlide">
+						<img src="img/slide4.jpg" class="slide__img4" alt="" />
+					</div>
 				</div>
 			</div>
 

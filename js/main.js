@@ -33,8 +33,61 @@ $(function() {
 
 	$(".hi").on("click", function() {
 		$(".top-wrapper__nav__down li").toggleClass("click");
-		$(".top-wrapper__nav__down li").slideToggle(300);
 	});
+
+	// 캐러셀 슬라이드
+	const firstSlide = document.querySelector(".slide-items");
+	const leftBtn = document.getElementById("left");
+	const rightBtn = document.getElementById("right");
+	const lastSlide = document.getElementById("lastSlide");
+	let stopCarousel;
+
+	function carousel() {
+		const beforeSlide = document.querySelector(".showing");
+		if (beforeSlide) {
+			beforeSlide.classList.remove("showing");
+			const nextSlide = beforeSlide.nextElementSibling;
+			if (nextSlide) {
+				nextSlide.classList.add("showing");
+			} else {
+				firstSlide.classList.add("showing");
+			}
+		} else {
+			firstSlide.classList.add("showing");
+		}
+	}
+	carousel();
+	stopCarousel = setInterval(carousel, 7000);
+
+	function leftBtnHandle() {
+		clearInterval(stopCarousel);
+		const currentSlide = document.querySelector(".showing");
+		const previousSlide = currentSlide.previousElementSibling;
+		currentSlide.classList.remove("showing");
+		if (previousSlide) {
+			previousSlide.classList.add("showing");
+		} else {
+			lastSlide.classList.add("showing");
+		}
+		stopCarousel = setInterval(carousel, 7000);
+	}
+
+	function rightBtnHandle() {
+		clearInterval(stopCarousel);
+		const currentSlide = document.querySelector(".showing");
+		const nextSlide = currentSlide.nextElementSibling;
+
+		currentSlide.classList.remove("showing");
+		if (nextSlide) {
+			nextSlide.classList.add("showing");
+		} else {
+			firstSlide.classList.add("showing");
+		}
+		stopCarousel = setInterval(carousel, 7000);
+	}
+
+	leftBtn.addEventListener("click", leftBtnHandle);
+	rightBtn.addEventListener("click", rightBtnHandle);
 });
 
 // 컨트롤 내릴때 한 영역씩
