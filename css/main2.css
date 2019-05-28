@@ -305,6 +305,7 @@ header.sticky {
 	margin-top: -60px;
 	z-index: -100;
 	position: relative;
+	line-height: 0px;
 }
 
 video #player {
